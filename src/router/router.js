@@ -2,6 +2,7 @@ import AboutPage from '@/pages/AboutPage.vue';
 import BarberPage from '@/pages/BarberPage.vue';
 import GalleryPage from '@/pages/GalleryPage.vue';
 import LandingPage from '@/pages/LandingPage.vue';
+import LoginPage from '@/pages/LoginPage.vue';
 import ProfilePage from '@/pages/ProfilePage.vue';
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -25,6 +26,10 @@ const routes = [
   {
     path: '/profile',
     component: ProfilePage
+  },
+  {
+    path: '/login',
+    component: LoginPage
   }
 ];
 

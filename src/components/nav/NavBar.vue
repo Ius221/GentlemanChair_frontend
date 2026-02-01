@@ -6,7 +6,8 @@
       <router-link to="/gallery">Gallery</router-link>
       <router-link to="/barbers">Barbers</router-link>
       <router-link to="/about">About us</router-link>
-      <router-link to="/profile" class="profile--btn"> Profile </router-link>
+      <router-link to="/login" v-if="true">Login</router-link>
+      <router-link to="/profile" class="profile--btn" v-else> Profile </router-link>
     </div>
   </div>
 </template>
@@ -36,9 +37,13 @@ a {
   font-weight: lighter;
   letter-spacing: 2px;
 }
+a:hover {
+  color: #bbbb;
+  /* text-decoration: underline; */
+}
 .active {
   font-weight: normal;
-  color: #bbb;
+  color: #bbb !important;
 }
 .profile--btn {
   border: 1px solid #ad1c18;
