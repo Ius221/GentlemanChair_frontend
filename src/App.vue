@@ -8,10 +8,12 @@
     </p>
     <router-view />
   </div>
+  <BottomPart />
 </template>
 
 <script setup>
 import NavBar from './components/nav/NavBar.vue'
+import BottomPart from './components/footer/BottomPart.vue'
 </script>
 
 <style>
