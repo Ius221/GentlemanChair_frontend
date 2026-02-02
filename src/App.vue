@@ -1,19 +1,24 @@
 <template>
   <div class="outer-all">
     <NavBar />
-    <h1>You did it!</h1>
-    <p>
-      Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-      documentation
-    </p>
     <router-view />
   </div>
-  <BottomPart />
+  <BottomPart v-if="showBottomPart" />
 </template>
 
 <script setup>
 import NavBar from './components/nav/NavBar.vue'
 import BottomPart from './components/footer/BottomPart.vue'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const showBottomPart = computed(() => {
+  if (route.path == '/login') return false
+
+  return true
+})
 </script>
 
 <style>

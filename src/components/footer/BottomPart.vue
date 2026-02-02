@@ -18,8 +18,8 @@
         <h4>subscribe us</h4>
         <p>Receive exclusive updates and special deals from Gentleman’s Touch.</p>
         <div class="box">
-          <input type="email" name="" id="" placeholder="Your email address" />
-          <button type="submit">subscribe</button>
+          <input type="email" required v-model="email" placeholder="Your email address" />
+          <button type="submit" @click="subscribe">subscribe</button>
         </div>
       </div>
     </div>
@@ -31,6 +31,14 @@
 import insta from '@/components/assets/insta.png'
 import wtsap from '@/components/assets/wtsap.png'
 import fb from '@/components/assets/fb.png'
+import { ref } from 'vue'
+
+let email = ref(null)
+
+const subscribe = () => {
+  alert('Subscribed Successfully ' + email.value)
+  email.value = null
+}
 </script>
 
 <style scoped>
