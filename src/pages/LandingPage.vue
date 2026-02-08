@@ -1,4 +1,7 @@
-<template>Landing page</template>
+<template>
+  <div>landing page</div>
+  <div>landing page</div>
+</template>
 
 <script>
 export default {}
