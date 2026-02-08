@@ -28,9 +28,9 @@
 </template>
 
 <script setup>
-import insta from '@/components/assets/insta.png'
-import wtsap from '@/components/assets/wtsap.png'
-import fb from '@/components/assets/fb.png'
+import insta from '@/components/assets/images/insta.png'
+import wtsap from '@/components/assets/images/wtsap.png'
+import fb from '@/components/assets/images/fb.png'
 import { ref } from 'vue'
 
 let email = ref(null)

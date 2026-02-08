@@ -19,10 +19,9 @@ img {
 .outer-div {
   width: 100%;
   aspect-ratio: 3;
-  background-image: url('@/components/assets/cta.png');
+  background-image: url('@/components/assets/images/cta.png');
   background-size: cover;
   background-position: center;
-  /* display: grid; */
   position: relative;
 }
 .inner-div {
@@ -30,6 +29,5 @@ img {
   top: 50%;
   left: 55%;
   transform: translateY(-50%);
-  /* transform: translate(50%, 50%); */
 }
 </style>
