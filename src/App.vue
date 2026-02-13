@@ -3,8 +3,8 @@
     <NavBar />
     <router-view />
   </div>
-  <CtaPart />
-  <BottomPart v-if="showBottomPart" />
+  <CtaPart v-if="isHidden" />
+  <BottomPart v-if="isHidden" />
 </template>
 
 <script setup>
@@ -16,7 +16,7 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
-const showBottomPart = computed(() => {
+const isHidden = computed(() => {
   if (route.path == '/login') return false
 
   return true
