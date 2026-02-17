@@ -2,7 +2,8 @@ import AboutPage from '@/pages/AboutPage.vue';
 import BarberPage from '@/pages/BarberPage.vue';
 import GalleryPage from '@/pages/GalleryPage.vue';
 import LandingPage from '@/pages/LandingPage.vue';
-import LoginPage from '@/pages/LoginPage.vue';
+import SigninPage from '@/pages/SigninPage.vue';
+import SignUp from '@/components/auth/SignUp.vue';
 import ProfilePage from '@/pages/ProfilePage.vue';
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -28,8 +29,11 @@ const routes = [
     component: ProfilePage
   },
   {
-    path: '/login',
-    component: LoginPage
+    path: '/signin',
+    component: SigninPage
+  }, {
+    path: '/signup',
+    component: SignUp
   }
 ];
 

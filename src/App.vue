@@ -17,7 +17,7 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 
 const isHidden = computed(() => {
-  if (route.path == '/login') return false
+  if (route.path == '/signin') return false
 
   return true
 })

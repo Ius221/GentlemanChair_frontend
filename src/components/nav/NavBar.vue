@@ -6,11 +6,24 @@
       <router-link to="/gallery">Gallery</router-link>
       <router-link to="/barbers">Barbers</router-link>
       <router-link to="/about">About us</router-link>
-      <router-link to="/login" v-if="true">Login</router-link>
-      <router-link to="/profile" class="profile--btn" v-else> Profile </router-link>
+      <router-link to="/signup" v-if="isSignin" class="auth">Signup</router-link>
+      <router-link to="/signin" v-else class="auth">Signin</router-link>
+      <!-- <router-link to="/profile" class="profile--btn" v-else> Profile </router-link> -->
     </div>
   </div>
 </template>
+
+<script setup>
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+// Computed properties are reactive and more performant
+const isSignin = computed(() => {
+  return route.path === '/signin'
+})
+</script>
 
 <style scoped>
 .nav-container {
@@ -63,4 +76,7 @@ a:hover {
   background-color: rgba(173, 28, 24, 0.5);
   color: #ccc;
 }
+/* .auth {
+  color: #f00;
+} */
 </style>
