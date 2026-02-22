@@ -1,9 +1,13 @@
 <template>
   <p>Gallery</p>
+  <ServicePrice></ServicePrice>
 </template>
 
-<script>
-export default {}
+<script setup>
+import ServicePrice from '@/components/multiuse/ServicePrice.vue';
+
 </script>
 
-<style></style>
+<style scoped>
+
+</style>

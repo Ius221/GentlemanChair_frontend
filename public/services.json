@@ -1,0 +1,26 @@
+[
+  {
+    "Haircut": 200,
+    "Hair Styling": 250,
+    "Hair Wash": 120,
+    "Hair Spa": 600
+  },
+  {
+    "Beard Trim": 120,
+    "Beard Styling": 180,
+    "Beard Shaving": 150,
+    "Beard Coloring": 300
+  },
+  {
+    "Face Cleanup": 350,
+    "Facial": 800,
+    "De-Tan": 500,
+    "Blackhead Removal": 250
+  },
+  {
+    "Head Massage": 200,
+    "Shoulder Massage": 300,
+    "Full Body Massage": 1200,
+    "Steam Therapy": 250
+  }
+]
